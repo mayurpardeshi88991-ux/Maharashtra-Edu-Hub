@@ -30,23 +30,14 @@ function searchSite() {
         alert("No matching section found!");
     }
 }
-
-// DIWALI POPUP - 48 HOURS EXPIRY
+// DIWALI POPUP - FIXED EXPIRY
 
 const diwaliPopup = document.getElementById("diwaliPopup");
 const closeDiwali = document.getElementById("closeDiwali");
 
-// Fixed expiry: 48 hours after first launch
-const expiryKey = "maharashtraEduHubDiwaliExpiry";
+const expiryTime = new Date("2026-11-09T23:59:00+05:30").getTime();
 
-let expiryTime = localStorage.getItem(expiryKey);
-
-if (!expiryTime) {
-  expiryTime = Date.now() + (48 * 60 * 60 * 1000);
-  localStorage.setItem(expiryKey, expiryTime);
-}
-
-if (Date.now() >= Number(expiryTime)) {
+if (Date.now() >= expiryTime) {
   diwaliPopup.style.display = "none";
 }
 
