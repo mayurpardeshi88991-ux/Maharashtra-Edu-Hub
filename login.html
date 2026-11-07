@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Maharashtra Edu Hub</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef3ff;
+    }
+
+    .login-box {
+      width: 85%;
+      max-width: 380px;
+      margin: 75px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px #0002;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      color: #174ea6;
+      margin-bottom: 8px;
+    }
+
+    .login-box p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .login-box input {
+      width: 90%;
+      padding: 13px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      font-size: 15px;
+    }
+
+    .login-box button {
+      width: 98%;
+      padding: 13px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 7px;
+      background: #174ea6;
+      color: white;
+      font-size: 16px;
+    }
+
+    .login-box a {
+      display: block;
+      margin-top: 20px;
+      color: #174ea6;
+      text-decoration: none;
+    }
+
+    #message {
+      color: #b42318;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+    <h2>🎓 Admin Login</h2>
+    <p>MAHARASHTRA EDU HUB</p>
+
+    <form id="loginForm">
+      <input type="email" placeholder="Admin Email" required>
+
+      <input type="password" placeholder="Password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p id="message"></p>
+
+    <a href="../index.html">← Back to Home</a>
+  </div>
+
+  <script>
+    document.getElementById("loginForm")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        document.getElementById("message").textContent =
+          "Login system will be connected securely in the next step.";
+      });
+  </script>
+
+</body>
+</html>

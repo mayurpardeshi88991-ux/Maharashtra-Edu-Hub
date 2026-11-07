@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Resources | Maharashtra Edu Hub</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef3ff;
+    }
+
+    .upload-container {
+      max-width: 550px;
+      margin: 35px auto;
+      padding: 22px;
+    }
+
+    .upload-box {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px #0001;
+    }
+
+    h2 {
+      color: #174ea6;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 16px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin-top: 7px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      font-size: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 7px;
+      background: #174ea6;
+      color: white;
+      font-size: 16px;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #174ea6;
+      text-decoration: none;
+    }
+
+    #message {
+      text-align: center;
+      color: #174ea6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="upload-container">
+    <div class="upload-box">
+
+      <h2>📤 Upload Resources</h2>
+
+      <form id="uploadForm">
+
+        <label>Choose Category</label>
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option value="PYQ">Previous Year Paper</option>
+          <option value="Notes">Study Notes</option>
+          <option value="News">Board News</option>
+        </select>
+
+        <label>Title</label>
+        <input type="text" id="title"
+          placeholder="Enter resource title" required>
+
+        <label>Class</label>
+        <select id="studentClass">
+          <option value="SSC 10th">SSC 10th</option>
+          <option value="HSC 12th">HSC 12th</option>
+        </select>
+
+        <label>Stream</label>
+        <select id="stream">
+          <option value="Science">Science</option>
+          <option value="Commerce">Commerce</option>
+          <option value="Arts">Arts</option>
+        </select>
+
+        <label>Subject</label>
+        <input type="text" id="subject"
+          placeholder="Enter subject">
+
+        <label>Select PDF</label>
+        <input type="file" id="pdfFile"
+          accept=".pdf,application/pdf">
+
+        <label>News / Description</label>
+        <textarea id="description"
+          rows="4" placeholder="Enter details"></textarea>
+
+        <button type="submit">Submit Resource</button>
+
+      </form>
+
+      <p id="message"></p>
+
+      <a class="back" href="admin.html">
+        ← Back to Dashboard
+      </a>
+
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("uploadForm")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        document.getElementById("message").textContent =
+          "Upload form ready! Cloud storage will be connected next.";
+
+      });
+  </script>
+
+</body>
+</html>

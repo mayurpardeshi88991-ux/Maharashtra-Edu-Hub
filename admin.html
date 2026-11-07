@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Maharashtra Edu Hub</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f4ff;
+    }
+
+    .dashboard {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .welcome {
+      background: #174ea6;
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+
+    .welcome h2 {
+      margin-top: 0;
+    }
+
+    .admin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .admin-card {
+      background: white;
+      padding: 25px 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px #0001;
+    }
+
+    .admin-card h3 {
+      color: #174ea6;
+    }
+
+    .admin-card p {
+      color: #666;
+    }
+
+    .admin-card a {
+      display: inline-block;
+      background: #174ea6;
+      color: white;
+      padding: 11px 18px;
+      border-radius: 7px;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 25px;
+      color: #174ea6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="dashboard">
+
+    <section class="welcome">
+      <h2>🎓 Admin Dashboard</h2>
+      <p>Welcome to Maharashtra Edu Hub!</p>
+      <p>Manage educational resources from here.</p>
+    </section>
+
+    <section class="admin-grid">
+
+      <div class="admin-card">
+        <h3>📄 PYQ Papers</h3>
+        <p>Manage previous year question papers.</p>
+        <a href="upload.html">Manage PYQ</a>
+      </div>
+
+      <div class="admin-card">
+        <h3>📚 Study Notes</h3>
+        <p>Manage chapter-wise study notes.</p>
+        <a href="upload.html">Manage Notes</a>
+      </div>
+
+      <div class="admin-card">
+        <h3>📰 Board News</h3>
+        <p>Add timetable and board updates.</p>
+        <a href="upload.html">Manage News</a>
+      </div>
+
+      <div class="admin-card">
+        <h3>⚙️ Website</h3>
+        <p>Return to the student website.</p>
+        <a href="../index.html">Visit Website</a>
+      </div>
+
+    </section>
+
+    <a class="back" href="login.html">← Back to Login</a>
+
+  </main>
+
+</body>
+</html>

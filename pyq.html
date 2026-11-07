@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYQ Papers | Maharashtra Edu Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .pyq-hero {
+            background: linear-gradient(135deg,#102f59,#247ed0);
+            color: white;
+            text-align: center;
+            padding: 55px 7%;
+        }
+        .pyq-hero h1 {font-size: 32px;margin-bottom: 12px;}
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .filters select, .filters input {
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .paper-card {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+        .paper-card h3 {color:#123b70;margin-bottom:10px;}
+        .paper-card p {color:#68758a;margin-bottom:12px;}
+        .paper-card .btn {margin-top:8px;}
+        .paper-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+            gap: 18px;
+        }
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        #emptyMessage {display:none;margin-top:20px;color:#a33;}
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">🎓 MAHARASHTRA EDU HUB</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="navbar">
+        <a href="../index.html">Home</a>
+        <a href="pyq.html">PYQ</a>
+        <a href="notes.html">Notes</a>
+        <a href="news.html">Board News</a>
+    </nav>
+</header>
+
+<section class="pyq-hero">
+    <h1>Previous Year Question Papers</h1>
+    <p>Practice more. Prepare better. Achieve success.</p>
+    <a class="back-home" href="../index.html">← Back to Home</a>
+</section>
+
+<section class="container">
+    <h2>Find Your Question Paper 📚</h2>
+
+    <div class="filters">
+        <select id="classFilter">
+            <option value="">Select Class</option>
+            <option value="SSC 10th">SSC 10th</option>
+            <option value="HSC 12th">HSC 12th</option>
+        </select>
+
+        <select id="streamFilter">
+            <option value="">Select Stream</option>
+            <option value="Science">Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Arts">Arts</option>
+        </select>
+
+        <select id="subjectFilter">
+            <option value="">Select Subject</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Biology">Biology</option>
+            <option value="English">English</option>
+        </select>
+
+        <select id="yearFilter">
+            <option value="">Select Year</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+        </select>
+    </div>
+
+    <div class="paper-grid" id="paperList"></div>
+    <p id="emptyMessage">No matching papers found.</p>
+</section>
+
+<footer>
+    <h2>MAHARASHTRA EDU HUB</h2>
+    <p>Learn Today • Lead Tomorrow</p>
+    <p>© 2026 All Rights Reserved.</p>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/pyq.js"></script>
+</body>
+</html>

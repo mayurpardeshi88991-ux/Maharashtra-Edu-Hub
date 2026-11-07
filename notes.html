@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes | Maharashtra Edu Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .notes-hero {
+            background: linear-gradient(135deg,#102f59,#247ed0);
+            color: white;
+            text-align: center;
+            padding: 55px 7%;
+        }
+
+        .notes-hero h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .notes-filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+            gap: 12px;
+            margin: 25px 0;
+        }
+
+        .notes-filters select,
+        .notes-filters input {
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .notes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+            gap: 18px;
+        }
+
+        .note-card {
+            background: white;
+            padding: 23px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        .note-card h3 {
+            color: #123b70;
+            margin-bottom: 12px;
+        }
+
+        .note-card p {
+            color: #68758a;
+            margin-bottom: 12px;
+        }
+
+        .note-card button {
+            margin-top: 8px;
+        }
+
+        #noNotes {
+            display: none;
+            color: #a33;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">🎓 MAHARASHTRA EDU HUB</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navbar">
+        <a href="../index.html">Home</a>
+        <a href="pyq.html">PYQ</a>
+        <a href="notes.html">Notes</a>
+        <a href="news.html">Board News</a>
+    </nav>
+</header>
+
+<section class="notes-hero">
+    <h1>Study Notes & Materials</h1>
+    <p>Understand Concepts. Prepare Smart. Score Better.</p>
+    <a href="../index.html" class="back-home">← Back to Home</a>
+</section>
+
+<section class="container">
+
+    <h2>Explore Study Notes 📚</h2>
+
+    <div class="notes-filters">
+
+        <select id="noteClass">
+            <option value="">Select Class</option>
+            <option value="SSC 10th">SSC 10th</option>
+            <option value="HSC 12th">HSC 12th</option>
+        </select>
+
+        <select id="noteStream">
+            <option value="">Select Stream</option>
+            <option value="Science">Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Arts">Arts</option>
+        </select>
+
+        <select id="noteSubject">
+            <option value="">Select Subject</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Biology">Biology</option>
+            <option value="English">English</option>
+            <option value="History">History</option>
+            <option value="Geography">Geography</option>
+        </select>
+
+        <input type="text" id="noteSearch"
+        placeholder="Search chapter name...">
+
+    </div>
+
+    <div class="notes-grid" id="notesList"></div>
+
+    <p id="noNotes">No matching notes found.</p>
+
+</section>
+
+<footer>
+    <h2>MAHARASHTRA EDU HUB</h2>
+    <p>Learn Today • Lead Tomorrow</p>
+    <p>© 2026 All Rights Reserved.</p>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/notes.js"></script>
+
+</body>
+</html>

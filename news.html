@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board News | Maharashtra Edu Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .news-hero {
+            background: linear-gradient(135deg,#102f59,#247ed0);
+            color: white;
+            text-align: center;
+            padding: 55px 7%;
+        }
+
+        .news-hero h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+            gap: 20px;
+        }
+
+        .news-card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        .news-card h3 {
+            color: #123b70;
+            margin: 12px 0;
+        }
+
+        .news-card p {
+            color: #68758a;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .news-icon {
+            font-size: 35px;
+        }
+
+        .news-label {
+            display: inline-block;
+            background: #e3efff;
+            color: #1263a7;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .official-box {
+            margin-top: 35px;
+            padding: 25px;
+            background: #e3efff;
+            border-radius: 12px;
+            line-height: 2;
+        }
+
+        .official-box a {
+            color: #1263a7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">🎓 MAHARASHTRA EDU HUB</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="navbar">
+        <a href="../index.html">Home</a>
+        <a href="pyq.html">PYQ</a>
+        <a href="notes.html">Notes</a>
+        <a href="news.html">Board News</a>
+    </nav>
+</header>
+
+<section class="news-hero">
+    <h1>📰 Maharashtra Board News</h1>
+    <p>Latest Updates, Notifications & Examination News</p>
+    <a href="../index.html" class="back-home">← Back to Home</a>
+</section>
+
+<section class="container">
+
+    <h2>Important Board Updates</h2>
+
+    <div class="news-grid">
+
+        <div class="news-card">
+            <div class="news-icon">📅</div>
+            <span class="news-label">EXAMINATION</span>
+            <h3>Exam Timetable</h3>
+            <p>Check SSC and HSC examination schedules and dates.</p>
+            <a class="btn" href="https://mahahsscboard.in/"
+               target="_blank">Official Updates</a>
+        </div>
+
+        <div class="news-card">
+            <div class="news-icon">🎫</div>
+            <span class="news-label">HALL TICKET</span>
+            <h3>Hall Ticket Updates</h3>
+            <p>Check official announcements regarding examination hall tickets.</p>
+            <a class="btn" href="https://mahahsscboard.in/"
+               target="_blank">Visit Board</a>
+        </div>
+
+        <div class="news-card">
+            <div class="news-icon">📢</div>
+            <span class="news-label">CIRCULAR</span>
+            <h3>Board Circulars</h3>
+            <p>Find important notifications and academic circulars.</p>
+            <a class="btn" href="https://mahahsscboard.in/"
+               target="_blank">View Website</a>
+        </div>
+
+        <div class="news-card">
+            <div class="news-icon">🏆</div>
+            <span class="news-label">RESULT</span>
+            <h3>SSC & HSC Results</h3>
+            <p>Check official result announcements and updates.</p>
+            <a class="btn" href="https://mahresult.nic.in/"
+               target="_blank">Result Portal</a>
+        </div>
+
+    </div>
+
+    <div class="official-box">
+        <h2>Official Maharashtra Board Website</h2>
+        <p>Always verify important exam information from official sources.</p>
+        <p>
+            <a href="https://mahahsscboard.in/" target="_blank">
+                Maharashtra State Board Website →
+            </a>
+        </p>
+        <p>
+            <a href="https://mahresult.nic.in/" target="_blank">
+                Maharashtra Board Result Portal →
+            </a>
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    <h2>MAHARASHTRA EDU HUB</h2>
+    <p>Learn Today • Lead Tomorrow</p>
+    <p>© 2026 All Rights Reserved.</p>
+</footer>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
