@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maharashtra Edu Hub | Maharashtra Board SSC & HSC Study Material</title>
     <meta name="description" content="Maharashtra Edu Hub - Maharashtra Board SSC and HSC students ke liye free notes, previous year question papers, MCQs and board exam preparation resources.">
-
-<meta name="keywords" content="Maharashtra Board, HSC, SSC, MHT CET, HSC Notes, SSC Notes, Previous Year Question Papers, Maharashtra Edu Hub">
-
+    <meta name="keywords" content="Maharashtra Board, HSC, SSC, MHT CET, HSC Notes, SSC Notes, Previous Year Question Papers, Maharashtra Edu Hub">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,7 +14,6 @@
 
 <header class="header">
     <div class="logo">🎓 MAHARASHTRA EDU HUB</div>
-
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
     <nav id="navbar">
@@ -27,6 +24,26 @@
         <a href="pages/about.html">About</a>
     </nav>
 </header>
+
+<!-- AUTOMATIC MAINTENANCE MESSAGE -->
+<section id="maintenanceNotice" style="
+    display:none;
+    background:#fff5e6;
+    color:#292929;
+    border:2px solid #c62828;
+    border-radius:10px;
+    padding:18px;
+    margin:20px 7%;
+    text-align:center;
+">
+    <h2 style="color:#c62828;">📢 Maintenance Mode</h2>
+    <p>
+        Maharashtra Edu Hub is currently in maintenance mode.
+        Existing study materials are available.
+        New updates will resume in May 2027.
+    </p>
+    <p><strong>Thank you for your support! 🙏</strong></p>
+</section>
 
 <section class="hero">
     <span class="tag">YOUR EDUCATION PARTNER</span>
@@ -91,32 +108,23 @@
     <p>© 2026 Maharashtra Edu Hub. All Rights Reserved.</p>
 </footer>
 
+<script>
+    // Show maintenance message only during the scheduled period
+    const indiaDate = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Kolkata",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+    }).format(new Date());
+
+    if (indiaDate >= "2026-11-10" && indiaDate < "2027-05-01") {
+        document.getElementById("maintenanceNotice").style.display = "block";
+    }
+</script>
+
 <script src="js/main.js"></script>
 
-<!-- Diwali Greeting Popup -->
-<div id="diwaliPopup" class="diwali-overlay">
-  <div class="diwali-card">
-    <button type="button" id="closeDiwali" class="diwali-close"
-onclick="document.getElementById('diwaliPopup').style.display='none'">×</button>
-
-    <div class="diya">🪔</div>
-
-    <h2>Happy Diwali!</h2>
-
-    <h3>To All Maharashtra Edu Hub Students</h3>
-
-    <p>
-      May this Diwali bring happiness, success,
-      knowledge and bright opportunities into your life.
-    </p>
-
-    <h3>Keep Learning, Keep Growing!</h3>
-
-    <p class="diwali-love">With Best Wishes ❤️</p>
-
-    <p class="diwali-brand">MAHARASHTRA EDU HUB</p>
-  </div>
-</div>
- <script src="js/main.js"></script>   
 </body>
 </html>
+
+            
