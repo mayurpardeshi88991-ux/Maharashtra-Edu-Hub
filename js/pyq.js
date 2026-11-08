@@ -6,7 +6,7 @@ const papers = [
         stream: "Science",
         subject: "Physics",
         year: "2025",
-        pdf: ""
+        pdf: "../1754559134phptfTVlP.pdf"
     },
     {
         title: "Chemistry Question Paper",
