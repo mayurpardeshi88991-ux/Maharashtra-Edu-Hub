@@ -279,3 +279,24 @@ footer {
         width: 100%;
     }
 }
+.site-footer {
+    background: #101827;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 40px;
+}
+
+.site-footer h2 {
+    color: #ffb347;
+    margin-bottom: 12px;
+}
+
+.site-footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.site-footer strong {
+    color: #ffb347;
+}
