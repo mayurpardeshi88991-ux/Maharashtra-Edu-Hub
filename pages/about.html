@@ -5,44 +5,381 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Mayurshala</title>
-    <meta name="description" content="Learn about Mayurshala, an educational platform helping Maharashtra Board SSC and HSC students with free study materials.">
+
+    <title>About Mayurshala | Education for Every Student</title>
+
+    <meta name="description" content="Discover Mayurshala, an educational platform supporting Maharashtra Board SSC and HSC students with free learning resources.">
+
     <meta name="author" content="Mayur Pardeshi">
+
     <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f4f7fc;
+            color: #172b4d;
+            font-family: Arial, sans-serif;
+        }
+
+        .ms-header {
+            background: #102d50;
+            color: white;
+            padding: 20px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .ms-logo {
+            font-size: 23px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .ms-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .ms-nav a:hover {
+            color: #ffad42;
+        }
+
+        .ms-hero {
+            background: linear-gradient(130deg, #102d50, #174d7d);
+            color: white;
+            padding: 75px 7%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ms-hero::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border: 35px solid rgba(255,255,255,0.06);
+            border-radius: 50%;
+            right: -65px;
+            top: -65px;
+        }
+
+        .ms-tag {
+            display: inline-block;
+            color: #ffd08a;
+            border: 1px solid rgba(255,208,138,0.5);
+            border-radius: 30px;
+            padding: 9px 18px;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .ms-hero h1 {
+            font-size: clamp(35px, 7vw, 58px);
+            margin: 22px 0 12px;
+        }
+
+        .ms-hero h1 span {
+            color: #ffad42;
+        }
+
+        .ms-hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #e0eaf5;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .ms-container {
+            width: 88%;
+            max-width: 1100px;
+            margin: 55px auto;
+        }
+
+        .ms-heading {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .ms-heading small {
+            color: #e68a21;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .ms-heading h2 {
+            font-size: 32px;
+            margin: 10px 0;
+            color: #102d50;
+        }
+
+        .ms-heading p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .ms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .ms-card {
+            background: white;
+            padding: 28px;
+            border-radius: 17px;
+            border: 1px solid #e6edf5;
+            box-shadow: 0 8px 25px rgba(16,45,80,0.06);
+            transition: 0.3s;
+        }
+
+        .ms-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 30px rgba(16,45,80,0.12);
+        }
+
+        .ms-icon {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .ms-card h3 {
+            color: #102d50;
+            font-size: 21px;
+        }
+
+        .ms-card p {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .ms-founder {
+            background: linear-gradient(120deg, #102d50, #174d7d);
+            color: white;
+            padding: 38px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            flex-wrap: wrap;
+            box-shadow: 0 12px 30px rgba(16,45,80,0.15);
+        }
+
+        .ms-founder-icon {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            background: #ffad42;
+            display: grid;
+            place-items: center;
+            font-size: 45px;
+            flex-shrink: 0;
+        }
+
+        .ms-founder h2 {
+            margin: 8px 0;
+            font-size: 28px;
+        }
+
+        .ms-founder p {
+            color: #dce8f5;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .ms-footer {
+            background: #0b2039;
+            color: white;
+            text-align: center;
+            padding: 28px 15px;
+            line-height: 1.8;
+        }
+
+        .ms-footer strong {
+            color: #ffad42;
+        }
+
+        @media (max-width: 600px) {
+            .ms-header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .ms-logo {
+                font-size: 19px;
+            }
+
+            .ms-nav a {
+                margin: 0 10px;
+            }
+
+            .ms-hero {
+                padding: 60px 6%;
+            }
+
+            .ms-container {
+                width: 90%;
+                margin: 42px auto;
+            }
+
+            .ms-founder {
+                padding: 27px;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<header class="header">
-    <div class="logo">🎓 MAYURSHALA</div>
-    <nav>
+<header class="ms-header">
+    <div class="ms-logo">🎓 MAYURSHALA</div>
+
+    <nav class="ms-nav">
         <a href="../index.html">Home</a>
         <a href="about.html">About</a>
     </nav>
 </header>
 
-<section class="container">
-    <h1>About Mayurshala</h1>
+<section class="ms-hero">
+    <span class="ms-tag">WELCOME TO MAYURSHALA</span>
+
+    <h1>Learning Today.<br><span>Leading Tomorrow.</span></h1>
 
     <p>
-        Mayurshala is an educational platform created
-        to help Maharashtra Board SSC and HSC students
-        with useful and accessible study materials.
+        Education for Every Student.
+        A learning platform dedicated to helping
+        Maharashtra Board SSC and HSC students.
     </p>
-
-    <h2>Our Mission</h2>
-    <p>
-        Our mission is to provide free study notes,
-        previous year question papers, MCQs and
-        educational updates to students.
-    </p>
-
-    <h2>Founder & Creator</h2>
-    <h3>Mayur Pardeshi</h3>
-    <p>Founder and Creator of Mayurshala.</p>
-
-    <p>Education for Every Student</p>
-    <p>© 2026 Mayurshala. All Rights Reserved.</p>
 </section>
+
+<section class="ms-container">
+
+    <div class="ms-heading">
+        <small>WHO WE ARE</small>
+        <h2>About Mayurshala</h2>
+        <p>
+            Making educational resources easier to access
+            for every student.
+        </p>
+    </div>
+
+    <div class="ms-grid">
+
+        <div class="ms-card">
+            <div class="ms-icon">🎯</div>
+            <h3>Our Mission</h3>
+            <p>
+                To provide useful and accessible educational
+                resources that support students in their
+                learning journey.
+            </p>
+        </div>
+
+        <div class="ms-card">
+            <div class="ms-icon">🚀</div>
+            <h3>Our Vision</h3>
+            <p>
+                To build a helpful educational platform where
+                students can discover learning materials
+                and grow with confidence.
+            </p>
+        </div>
+
+        <div class="ms-card">
+            <div class="ms-icon">📚</div>
+            <h3>Our Focus</h3>
+            <p>
+                Supporting Maharashtra Board SSC and HSC
+                students through study notes, question papers,
+                MCQs and educational updates.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="ms-container">
+
+    <div class="ms-heading">
+        <small>LEARN • PRACTICE • GROW</small>
+        <h2>What You Can Explore</h2>
+        <p>Educational resources available on Mayurshala.</p>
+    </div>
+
+    <div class="ms-grid">
+
+        <div class="ms-card">
+            <div class="ms-icon">📝</div>
+            <h3>Study Notes</h3>
+            <p>Useful study notes to support your preparation.</p>
+        </div>
+
+        <div class="ms-card">
+            <div class="ms-icon">📖</div>
+            <h3>Previous Year Papers</h3>
+            <p>Explore previous year question papers for practice.</p>
+        </div>
+
+        <div class="ms-card">
+            <div class="ms-icon">💡</div>
+            <h3>MCQs</h3>
+            <p>Practice multiple-choice questions and improve your understanding.</p>
+        </div>
+
+        <div class="ms-card">
+            <div class="ms-icon">📰</div>
+            <h3>Education Updates</h3>
+            <p>Explore educational news and useful student updates.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="ms-container">
+
+    <div class="ms-founder">
+
+        <div class="ms-founder-icon">👨‍💻</div>
+
+        <div>
+            <span style="color:#ffbd68; font-weight:bold;">
+                FOUNDER & CREATOR
+            </span>
+
+            <h2>Mayur Pardeshi</h2>
+
+            <p>
+                Mayurshala was created by Mayur Pardeshi
+                with the aim of making educational resources
+                more accessible to students.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="ms-footer">
+    <strong>MAYURSHALA</strong>
+    <div>Education for Every Student</div>
+    <div>Created & Developed by Mayur Pardeshi</div>
+    <div>© 2026 Mayurshala. All Rights Reserved.</div>
+</footer>
 
 </body>
 </html>
