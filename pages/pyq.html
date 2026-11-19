@@ -1,11 +1,19 @@
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PYQ Papers | Maharashtra Edu Hub</title>
+
+    <title>PYQ Papers | Mayurshala</title>
+
+    <meta name="description" content="Explore Maharashtra Board SSC and HSC previous year question papers on Mayurshala.">
+
+    <meta name="author" content="Mayur Pardeshi">
+
     <link rel="stylesheet" href="../css/style.css">
+
     <style>
         .pyq-hero {
             background: linear-gradient(135deg,#102f59,#247ed0);
@@ -13,65 +21,106 @@
             text-align: center;
             padding: 55px 7%;
         }
-        .pyq-hero h1 {font-size: 32px;margin-bottom: 12px;}
+
+        .pyq-hero h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
         .filters {
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
             gap: 12px;
             margin-bottom: 25px;
         }
-        .filters select, .filters input {
+
+        .filters select,
+        .filters input {
             padding: 13px;
             border: 1px solid #ddd;
             border-radius: 8px;
             width: 100%;
         }
+
         .paper-card {
             background: white;
             padding: 22px;
             border-radius: 12px;
             box-shadow: 0 4px 15px #00000010;
         }
-        .paper-card h3 {color:#123b70;margin-bottom:10px;}
-        .paper-card p {color:#68758a;margin-bottom:12px;}
-        .paper-card .btn {margin-top:8px;}
+
+        .paper-card h3 {
+            color: #123b70;
+            margin-bottom: 10px;
+        }
+
+        .paper-card p {
+            color: #68758a;
+            margin-bottom: 12px;
+        }
+
+        .paper-card .btn {
+            margin-top: 8px;
+        }
+
         .paper-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
             gap: 18px;
         }
+
         .back-home {
             display: inline-block;
             margin-top: 20px;
             color: white;
             text-decoration: none;
         }
-        #emptyMessage {display:none;margin-top:20px;color:#a33;}
+
+        #emptyMessage {
+            display: none;
+            margin-top: 20px;
+            color: #a33;
+        }
     </style>
 </head>
+
 <body>
 
 <header class="header">
-    <div class="logo">🎓 MAHARASHTRA EDU HUB</div>
+
+    <div class="logo">🎓 MAYURSHALA</div>
+
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
     <nav id="navbar">
         <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="pyq.html">PYQ</a>
         <a href="notes.html">Notes</a>
         <a href="news.html">Board News</a>
+        <a href="contact.html">Contact</a>
     </nav>
+
 </header>
 
 <section class="pyq-hero">
+
     <h1>Previous Year Question Papers</h1>
+
     <p>Practice more. Prepare better. Achieve success.</p>
-    <a class="back-home" href="../index.html">← Back to Home</a>
+
+    <a class="back-home" href="../index.html">
+        ← Back to Home
+    </a>
+
 </section>
 
 <section class="container">
+
     <h2>Find Your Question Paper 📚</h2>
 
     <div class="filters">
+
         <select id="classFilter">
             <option value="">Select Class</option>
             <option value="SSC 10th">SSC 10th</option>
@@ -104,19 +153,26 @@
             <option value="2021">2021</option>
             <option value="2020">2020</option>
         </select>
+
     </div>
 
     <div class="paper-grid" id="paperList"></div>
-    <p id="emptyMessage" style="display:none;">No matching papers found.</p>
+
+    <p id="emptyMessage" style="display:none;">
+        No matching papers found.
+    </p>
+
 </section>
 
 <footer>
-    <h2>MAHARASHTRA EDU HUB</h2>
-    <p>Learn Today • Lead Tomorrow</p>
-    <p>© 2026 All Rights Reserved.</p>
+    <h2>MAYURSHALA</h2>
+    <p>Education for Every Student</p>
+    <p>Created & Developed by Mayur Pardeshi</p>
+    <p>© 2026 Mayurshala. All Rights Reserved.</p>
 </footer>
 
 <script src="../js/main.js"></script>
 <script src="../js/pyq.js"></script>
+
 </body>
 </html>
