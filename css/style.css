@@ -300,3 +300,20 @@ footer {
 .site-footer strong {
     color: #ffb347;
 }
+
+/* Mayurshala Website Banner */
+.brand-banner {
+    width: 92%;
+    max-width: 1200px;
+    margin: 18px auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.brand-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
